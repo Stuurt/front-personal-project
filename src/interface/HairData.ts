@@ -1,5 +1,5 @@
 export interface HairData {
-    id: number,
+    id?: number,
     title: string,
     image: string,
     price: number
