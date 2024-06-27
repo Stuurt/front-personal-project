@@ -3,13 +3,13 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    width: 100vw
+    width: 100%;
 }
 
 .card-grid {
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 16px;
+    gap: 80px;
 }
 
 .container button {
@@ -19,10 +19,16 @@
     position: fixed;
     bottom: 16px;
     right: 24px;
-    transition: all 0.1s linear 0.1s;
+    transition: all 0.2s linear 0.1s;
 }
 
 .container button:hover {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 7px 0px;
     transform: scale(1.1);
+}
+
+.front {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
 }
