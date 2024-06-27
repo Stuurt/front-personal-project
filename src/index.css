@@ -14,25 +14,39 @@
 }
 
 a {
+  margin: 0;
   font-weight: 500;
-  color: #646cff;
+  padding: 30px;
+  color: #ffffff;
   text-decoration: inherit;
+  text-transform: uppercase;
+  font-family: "sans-serif";
 }
+
 a:hover {
-  color: #535bf2;
+  color: #ec0f0f;
 }
 
 body {
   margin: 0;
-  display: flex;
+  width: 100%;
+  background-color: #2f2b2b;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+#heading {
+  background: rgb(217, 32, 32);
+}
+
+#heading div {
+  background-color: #242424;
+  display: grid;
+  width: 90%;
+  justify-content: center;
+  margin: 0 auto;
+  cursor: pointer;
 }
 
 button {

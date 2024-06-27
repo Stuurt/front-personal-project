@@ -14,17 +14,20 @@ function App() {
 
   return (
     <div className="container">
-        <h1>Barbearia</h1>
-        <div className="card-grid">
-            {data?.map(hairData => <Card
-                price={hairData.price}
-                title={hairData.title}
-                image={hairData.image}
-                />
-            )}
-            {isModalOpen && <CreateModal closeModal={handleOpenModal}/>}
-            <button onClick={handleOpenModal}>novo</button>
-        </div>
+        <body>
+        <header id="heading">
+            <div className="card-grid">
+                {data?.map(hairData => <Card
+                        price={hairData.price}
+                        title={hairData.title}
+                        image={hairData.image}
+                    />
+                )}
+                {isModalOpen && <CreateModal closeModal={handleOpenModal}/>}
+                <button onClick={handleOpenModal}>novo</button>
+            </div>
+        </header>
+        </body>
     </div>
   )
 }
