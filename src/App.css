@@ -7,9 +7,11 @@
 }
 
 .card-grid {
+    align-items: center;
     display: flex;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 80px;
+    transition: all 0.5s linear 0.1s;
+    gap: 30px;
 }
 
 .container button {
@@ -28,6 +30,7 @@
 }
 
 .front {
+    padding: 30px;
     background-color: black;
     display: flex;
     justify-content: space-between;
