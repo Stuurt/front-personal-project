@@ -3,6 +3,7 @@
   line-height: 1.5;
   font-weight: 400;
 
+  text-align: center;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
@@ -11,6 +12,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 a {
@@ -37,14 +39,20 @@ body {
 }
 
 #heading {
-  background: rgb(217, 32, 32);
+  padding: 125px 50px 50px 50px;
+  background-image: url("https://wallybarber.com.br/wp-content/uploads/2024/05/Hero-.png");
+  background-size: cover;
+  background-position: top center;
 }
 
 #heading div {
-  background-color: #242424;
+  padding: 50px 50px 50px 30px;
+  background-color: #313131;
+  border-radius: 45px;
   display: grid;
-  width: 90%;
+  width: 80%;
   justify-content: center;
+  transition: border-color 0.25s;
   margin: 0 auto;
   cursor: pointer;
 }
