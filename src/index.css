@@ -47,11 +47,13 @@ body {
 
 #heading div {
   padding: 50px 50px 50px 30px;
-  background-color: #313131;
+  background-color: rgb(84, 84, 84);
   border-radius: 45px;
-  display: grid;
-  width: 80%;
-  justify-content: center;
+  display: flex;
+  width: 70%;
+  align-items: stretch;
+  justify-items: stretch;
+  justify-content: space-evenly;
   transition: border-color 0.25s;
   margin: 0 auto;
   cursor: pointer;
