@@ -10,7 +10,6 @@
     align-items: center;
     display: flex;
     grid-template-columns: 1fr 1fr 1fr;
-    transition: all 0.5s linear 0.1s;
     gap: 30px;
 }
 
@@ -30,8 +29,20 @@
 }
 
 .front {
-    padding: 30px;
+    font-family: "Arial Black";
+    padding: 10px;
     background-color: black;
     display: flex;
     justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    width: 5%;
+    place-items: center;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    transition: all 0.2s linear 0.1s;
 }
