@@ -29,41 +29,6 @@ a:hover {
   transform: scale(1.1);
 }
 
-body {
-  margin: 0;
-  width: 100%;
-  background-color: #1a1919;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-#heading {
-  padding: 125px 50px 50px 50px;
-  background-image: url("https://wallybarber.com.br/wp-content/uploads/2024/05/Hero-.png");
-  background-size: cover;
-  background-position: center center;
-}
-
-#heading div {
-  padding: 50px 50px 50px 30px;
-  background-color: rgb(84, 84, 84);
-  border-radius: 45px;
-  display: flex;
-  width: 70%;
-  align-items: stretch;
-  justify-items: stretch;
-  justify-content: space-evenly;
-  margin: 0 auto;
-}
-
-#heading div:hover {
-  transform: scale(1.1);
-  border-color: #fcfcfc;
-  cursor: pointer;
-  transition: all 0.30s linear 0.1s;
-}
-
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -95,3 +60,78 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* Daqui para baixo pertence ao CSS que estou criando */
+
+/*  Front representa o cabeçalho  */
+
+#front {
+  font-family: "Arial Black",serif;
+  padding: 10px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  width: 5%;
+  place-items: center;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  transition: all 0.2s linear 0.1s;
+}
+
+/* Fim do cabeçalho */
+
+
+/* headind representa o conteúdo do site */
+
+#heading {
+  padding: 125px 50px 50px 50px;
+  background-image: url("https://wallybarber.com.br/wp-content/uploads/2024/05/Hero-.png");
+  background-size: cover;
+  background-position: center center;
+}
+
+#heading div {
+  padding: 50px 50px 50px 30px;
+  background-color: rgb(84, 84, 84);
+  border-radius: 45px;
+  display: flex;
+  width: 70%;
+  align-items: stretch;
+  justify-items: stretch;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+
+#heading div:hover {
+  transform: scale(1.1);
+  border-color: #fcfcfc;
+  cursor: pointer;
+  transition: all 0.30s linear 0.1s;
+}
+
+/* Fim do conteúdo */
+
+
+/* Menu representa o inicio do menu, uma futura navbar  */
+
+#menu {
+  display: flex;
+  background: #3f93f8;
+}
+
+/* Fim do menu  */
+
+
+/* rodapé representam o inicio do rodapé, o final do site, onde ficará a parte das informações */
+
+#rodape {
+  background: #ec0f0f;
+}
+
+/* Fim do rodapé */

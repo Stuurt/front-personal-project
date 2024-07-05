@@ -27,22 +27,3 @@
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 7px 0px;
     transform: scale(1.1);
 }
-
-.front {
-    font-family: "Arial Black";
-    padding: 10px;
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-}
-
-.logo {
-    display: flex;
-    width: 5%;
-    place-items: center;
-}
-
-.logo:hover {
-    transform: scale(1.1);
-    transition: all 0.2s linear 0.1s;
-}
