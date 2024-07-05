@@ -12,9 +12,11 @@ function App() {
         setIsModalOpen(prev => !prev)
     }
 
+
+    /* Esse return representa meu conteudo do site, o CSS corresponde a #heading */
+
   return (
     <div className="container">
-        <body>
         <header id="heading">
             <div className="card-grid">
                 {data?.map(hairData => <Card
@@ -27,7 +29,6 @@ function App() {
                 <button onClick={handleOpenModal}>novo</button>
             </div>
         </header>
-        </body>
     </div>
   )
 }
