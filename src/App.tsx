@@ -16,20 +16,28 @@ function App() {
     /* Esse return representa meu conteudo do site, o CSS corresponde a #heading */
 
   return (
-    <div className="container">
-        <header id="heading">
-            <div className="card-grid">
-                {data?.map(hairData => <Card
-                        price={hairData.price}
-                        title={hairData.title}
-                        image={hairData.image}
-                    />
-                )}
-                {isModalOpen && <CreateModal closeModal={handleOpenModal}/>}
-                <button onClick={handleOpenModal}>novo</button>
-            </div>
-        </header>
-    </div>
+      <div className="container">
+          <header id="heading">
+              <div className="card-grid">
+                  {data?.map(hairData => <Card
+                          price={hairData.price}
+                          title={hairData.title}
+                          image={hairData.image}
+                      />
+                  )}
+                  {isModalOpen && <CreateModal closeModal={handleOpenModal}/>}
+                  <button onClick={handleOpenModal}>novo</button>
+              </div>
+          </header>
+          <div id="rodape">
+              <li>Contato</li>
+              <li>Sobre nos</li>
+              <li>Termos</li>
+              <li>Politica de privacidade</li>
+              <li>Ajuda e suporte</li>
+          </div>
+      </div>
+
   )
 }
 

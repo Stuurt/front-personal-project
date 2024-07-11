@@ -76,7 +76,6 @@ button:focus-visible {
 .logo {
   display: flex;
   width: 5%;
-  place-items: center;
 }
 
 .logo:hover {
@@ -123,15 +122,12 @@ button:focus-visible {
 #menu {
   display: flex;
   background: #3f93f8;
+  justify-content: space-evenly;
 }
 
+#menu a {
+  font-size: 20px;
+  font-weight: bold;
+}
 /* Fim do menu  */
 
-
-/* rodapé representam o inicio do rodapé, o final do site, onde ficará a parte das informações */
-
-#rodape {
-  background: #ec0f0f;
-}
-
-/* Fim do rodapé */
