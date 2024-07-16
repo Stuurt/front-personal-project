@@ -22,6 +22,8 @@ a {
   color: #ffffff;
   text-decoration: inherit;
   text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 a:hover {
@@ -121,8 +123,9 @@ button:focus-visible {
 
 #menu {
   display: flex;
-  background: #3f93f8;
+  background: #0d233d;
   justify-content: space-evenly;
+  height: 60px;
 }
 
 #menu a {
@@ -131,3 +134,102 @@ button:focus-visible {
 }
 /* Fim do menu  */
 
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav li {
+  position: relative;
+}
+
+.nav a {
+  white-space: nowrap;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav li:hover a {
+  color: #3f93f8;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #3f93f8;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-link:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.icon {
+  width: 5.625rem;
+  height: 5.625rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.icon:hover > i {
+  scale: 1.1;
+  color: #f1f1f1;
+}
+
+.icon:before {
+  background: var(--color);
+  content: "";
+  position: absolute;
+  width: 130%;
+  height: 130%;
+  left: -110%;
+  top: 80%;
+  transform: rotate(45deg);
+}
+
+.icon:hover:before {
+  animation:
+          slide 0.7s forwards;
+}
+
+@keyframes slide {
+  50% {
+    left: 10%;
+    top: -40%
+  }
+  100% {
+    left: -15%;
+    top: -15%;
+  }
+}
