@@ -15,6 +15,12 @@
 
 }
 
+body {
+  background-image: url("https://wallybarber.com.br/wp-content/uploads/2024/05/Hero-.png");
+  background-size: cover;
+  background-position: center center;
+}
+
 a {
   margin: 0;
   font-size: 30px;
@@ -92,9 +98,6 @@ button:focus-visible {
 
 #heading {
   padding: 125px 50px 50px 50px;
-  background-image: url("https://wallybarber.com.br/wp-content/uploads/2024/05/Hero-.png");
-  background-size: cover;
-  background-position: center center;
 }
 
 #heading div {
@@ -110,7 +113,6 @@ button:focus-visible {
 }
 
 #heading div:hover {
-  transform: scale(1.1);
   border-color: #fcfcfc;
   cursor: pointer;
   transition: all 0.30s linear 0.1s;
