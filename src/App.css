@@ -31,8 +31,9 @@
 /* rodapé representam o inicio do rodapé, o final do site, onde ficará a parte das informações */
 
 #rodape {
-    display: table-column;
-    background: #ec0f0f;
+    justify-content: center;
+    background: #420101;
+    width: 100%;
 }
 
 /* Fim do rodapé */
