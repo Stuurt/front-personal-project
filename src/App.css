@@ -31,7 +31,7 @@
 /* rodapé representam o inicio do rodapé, o final do site, onde ficará a parte das informações */
 
 #rodape {
-    justify-content: center;
+    justify-content: right;
     background: #420101;
     width: 100%;
 }

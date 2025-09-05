@@ -1,19 +1,22 @@
+body {
+
+}
+
+
+
 .card {
-    display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 30px;
-    width: 350px;
     border-radius: 10px;
     box-shadow: rgba(126, 121, 121, 0.34) 5px 7px 29px 5px;
-    padding: 15px;
+    padding: 8px 12px 8px 12px;
 }
 
 .card img {
-    align-content: center;
+    display: flexbox;
     margin: 0;
     border-radius: 15px 15px 15px 15px;
-    width: 105%;
-    justify-content: space-evenly;
+    width: 300px;
     height: 300px;
 }

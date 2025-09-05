@@ -13,5 +13,6 @@ export function Card({price, title, image} : CardProps){
             <h2>{title}</h2>
             <p><b>Valor: </b>R$ {price}</p>
         </div>
+        
     )
 }
