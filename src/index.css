@@ -17,6 +17,7 @@
 
 body {
   background-image: url("https://wallybarber.com.br/wp-content/uploads/2024/05/Hero-.png");
+  width: 100%;
   background-size: cover;
   background-position: center center;
 }
